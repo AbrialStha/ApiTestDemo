@@ -2,9 +2,6 @@ Feature: karate answers 2
 
   Background:
     * url baseUrl
-    * def signIn = callonce read('../getToken.feature') {username: "peter@klaven", password: "cityslicka"}
-    * def token = signIn.token
-    * print '>> token :: ', token
 
   @ListSingleUsers(table)
   Scenario Outline: List single users Data

@@ -2,7 +2,7 @@
 Feature: To sign-in to the App and get token once
 
   Scenario:
-    * url baseUrl
+    * url burl
     * def credentials = {username:'#(username)', password:'#(password)'}
 
     Given path '/api/login'

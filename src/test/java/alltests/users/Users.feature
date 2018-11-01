@@ -2,8 +2,6 @@ Feature: User Related Api Test
 
   Background:
     * url baseUrl
-    * def signIn = callonce read('../getToken.feature') {username: "peter@klaven", password: "cityslicka"}
-    * def token = signIn.token
     * print '>> token :: ', token
 
   @ListALlUsers
